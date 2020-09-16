@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		FCA383A52511C540004CDEEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA383A42511C540004CDEEE /* AppDelegate.swift */; };
 		FCA383A72511C540004CDEEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA383A62511C540004CDEEE /* SceneDelegate.swift */; };
-		FCA383A92511C540004CDEEE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA383A82511C540004CDEEE /* ContentView.swift */; };
+		FCA383A92511C540004CDEEE /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA383A82511C540004CDEEE /* TaskListView.swift */; };
 		FCA383AB2511C543004CDEEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCA383AA2511C543004CDEEE /* Assets.xcassets */; };
 		FCA383AE2511C543004CDEEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCA383AD2511C543004CDEEE /* Preview Assets.xcassets */; };
 		FCA383B12511C543004CDEEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCA383AF2511C543004CDEEE /* LaunchScreen.storyboard */; };
 		FCA383BC2511C543004CDEEE /* SwiftUI_firebase_practiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA383BB2511C543004CDEEE /* SwiftUI_firebase_practiceTests.swift */; };
 		FCA383C72511C543004CDEEE /* SwiftUI_firebase_practiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA383C62511C543004CDEEE /* SwiftUI_firebase_practiceUITests.swift */; };
+		FCA383D62511C5AA004CDEEE /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA383D52511C5AA004CDEEE /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,7 @@
 		FCA383A12511C540004CDEEE /* SwiftUI_firebase_practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_firebase_practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA383A42511C540004CDEEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCA383A62511C540004CDEEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FCA383A82511C540004CDEEE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FCA383A82511C540004CDEEE /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
 		FCA383AA2511C543004CDEEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCA383AD2511C543004CDEEE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FCA383B02511C543004CDEEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		FCA383C22511C543004CDEEE /* SwiftUI_firebase_practiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUI_firebase_practiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA383C62511C543004CDEEE /* SwiftUI_firebase_practiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_firebase_practiceUITests.swift; sourceTree = "<group>"; };
 		FCA383C82511C543004CDEEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCA383D52511C5AA004CDEEE /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +101,9 @@
 		FCA383A32511C540004CDEEE /* SwiftUI_firebase_practice */ = {
 			isa = PBXGroup;
 			children = (
-				FCA383A42511C540004CDEEE /* AppDelegate.swift */,
-				FCA383A62511C540004CDEEE /* SceneDelegate.swift */,
-				FCA383A82511C540004CDEEE /* ContentView.swift */,
+				FCA383D72511C88C004CDEEE /* App */,
+				FCA383D42511C578004CDEEE /* Model */,
+				FCA383D82511C89E004CDEEE /* Views */,
 				FCA383AA2511C543004CDEEE /* Assets.xcassets */,
 				FCA383AF2511C543004CDEEE /* LaunchScreen.storyboard */,
 				FCA383B22511C543004CDEEE /* Info.plist */,
@@ -134,6 +136,31 @@
 				FCA383C82511C543004CDEEE /* Info.plist */,
 			);
 			path = SwiftUI_firebase_practiceUITests;
+			sourceTree = "<group>";
+		};
+		FCA383D42511C578004CDEEE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FCA383D52511C5AA004CDEEE /* Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FCA383D72511C88C004CDEEE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FCA383A42511C540004CDEEE /* AppDelegate.swift */,
+				FCA383A62511C540004CDEEE /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FCA383D82511C89E004CDEEE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FCA383A82511C540004CDEEE /* TaskListView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,9 +294,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCA383D62511C5AA004CDEEE /* Task.swift in Sources */,
 				FCA383A52511C540004CDEEE /* AppDelegate.swift in Sources */,
 				FCA383A72511C540004CDEEE /* SceneDelegate.swift in Sources */,
-				FCA383A92511C540004CDEEE /* ContentView.swift in Sources */,
+				FCA383A92511C540004CDEEE /* TaskListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
