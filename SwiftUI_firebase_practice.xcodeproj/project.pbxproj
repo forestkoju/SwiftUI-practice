@@ -16,6 +16,8 @@
 		FCA383BC2511C543004CDEEE /* SwiftUI_firebase_practiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA383BB2511C543004CDEEE /* SwiftUI_firebase_practiceTests.swift */; };
 		FCA383C72511C543004CDEEE /* SwiftUI_firebase_practiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA383C62511C543004CDEEE /* SwiftUI_firebase_practiceUITests.swift */; };
 		FCA383D62511C5AA004CDEEE /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA383D52511C5AA004CDEEE /* Task.swift */; };
+		FCA383DB2513672B004CDEEE /* TaskCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA383DA2513672B004CDEEE /* TaskCellViewModel.swift */; };
+		FCA383DD251639D7004CDEEE /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA383DC251639D7004CDEEE /* TaskListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		FCA383C62511C543004CDEEE /* SwiftUI_firebase_practiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_firebase_practiceUITests.swift; sourceTree = "<group>"; };
 		FCA383C82511C543004CDEEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCA383D52511C5AA004CDEEE /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		FCA383DA2513672B004CDEEE /* TaskCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellViewModel.swift; sourceTree = "<group>"; };
+		FCA383DC251639D7004CDEEE /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 			children = (
 				FCA383D72511C88C004CDEEE /* App */,
 				FCA383D42511C578004CDEEE /* Model */,
+				FCA383D9251366DC004CDEEE /* ViewModels */,
 				FCA383D82511C89E004CDEEE /* Views */,
 				FCA383AA2511C543004CDEEE /* Assets.xcassets */,
 				FCA383AF2511C543004CDEEE /* LaunchScreen.storyboard */,
@@ -161,6 +166,15 @@
 				FCA383A82511C540004CDEEE /* TaskListView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		FCA383D9251366DC004CDEEE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FCA383DA2513672B004CDEEE /* TaskCellViewModel.swift */,
+				FCA383DC251639D7004CDEEE /* TaskListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,7 +240,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1170;
-				LastUpgradeCheck = 1170;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = forestkoju;
 				TargetAttributes = {
 					FCA383A02511C540004CDEEE = {
@@ -298,6 +312,8 @@
 				FCA383A52511C540004CDEEE /* AppDelegate.swift in Sources */,
 				FCA383A72511C540004CDEEE /* SceneDelegate.swift in Sources */,
 				FCA383A92511C540004CDEEE /* TaskListView.swift in Sources */,
+				FCA383DB2513672B004CDEEE /* TaskCellViewModel.swift in Sources */,
+				FCA383DD251639D7004CDEEE /* TaskListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +386,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -378,6 +395,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = forestkoju;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -430,6 +448,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -438,6 +457,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = forestkoju;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
